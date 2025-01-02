@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <view>
+    <playbar />
+  </view>
 </template>
 
 <script setup></script>

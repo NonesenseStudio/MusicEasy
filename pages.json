@@ -1,6 +1,5 @@
 {
   "pages": [
-    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
     {
       "path": "pages/index/index",
       "style": {
@@ -12,14 +11,22 @@
     {
       "path": "pages/login/login",
       "style": {
-        "navigationBarTitleText": ""
+        "navigationBarTitleText": "",
+        "titleNView": false,
+        "disableScroll": true,
+        "softinputMode": "adjustResize",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "softinputMode": "adjustResize"
+        }
       }
     },
     {
       "path": "pages/home/home",
       "style": {
         "navigationBarTitleText": "",
-        "enablePullDownRefresh": true
+        "enablePullDownRefresh": true,
+        "titleNView": false
       }
     },
     {
@@ -48,7 +55,6 @@
   "easycom": {
     "autoscan": true,
     "custom": {
-      // uni-ui 规则如下配置
       "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
       "tui-(.*)": "thorui-uni/lib/thorui/tui-$1/tui-$1.vue"
     }
@@ -61,27 +67,32 @@
     "list": [
       {
         "pagePath": "pages/home/home",
-        "iconPath": "static/home.svg",
-        "selectedIconPath": "static/home_fill.svg",
+        "iconPath": "static/icon/home.svg",
+        "selectedIconPath": "static/icon/home_fill.svg",
         "text": "主页"
       },
       {
         "pagePath": "pages/discover/discover",
-        "iconPath": "static/discover.svg",
-        "selectedIconPath": "static/discover_fill.svg",
+        "iconPath": "static/icon/discover.svg",
+        "selectedIconPath": "static/icon/discover_fill.svg",
         "text": "探索"
       },
       {
         "pagePath": "pages/my/my",
-        "iconPath": "static/my.svg",
-        "selectedIconPath": "static/my_fill.svg",
+        "iconPath": "static/icon/my.svg",
+        "selectedIconPath": "static/icon/my_fill.svg",
         "text": "我的"
       }
     ]
   },
   "app-plus": {
     "darkmode": true,
-    "themeLocation": "theme.json"
+    "themeLocation": "theme.json",
+    "softinputMode": "adjustResize",
+    "bounce": "none",
+    "softinput": {
+      "mode": "adjustPan"
+    }
   },
   "h5": {
     "darkmode": true,

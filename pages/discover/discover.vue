@@ -1,5 +1,7 @@
 <template>
-  <view class="home"></view>
+  <view class="home">
+    <playbar />
+  </view>
 </template>
 
 <script setup></script>
@@ -8,7 +10,6 @@
 .home {
   width: 100%;
   height: 100%;
-  
   background-color: #f5f5f5;
 }
 </style>

@@ -31,7 +31,9 @@ onLoad(() => {
 .banner {
   width: 100%;
   height: 300rpx;
+  border-radius: 10rpx;
   .banner-img {
+    border-radius: 10rpx;
     width: 100%;
     height: 100%;
   }
