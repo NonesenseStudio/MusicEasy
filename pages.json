@@ -1,0 +1,90 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationBarBackgroundColor": "#ea2000",
+        "titleNView": false
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/home/home",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/discover/discover",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "uniIdRouter": {
+    "loginPage": "pages/login/login",
+    "needLogin": []
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      // uni-ui 规则如下配置
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+      "tui-(.*)": "thorui-uni/lib/thorui/tui-$1/tui-$1.vue"
+    }
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/home.svg",
+        "selectedIconPath": "static/home_fill.svg",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/discover/discover",
+        "iconPath": "static/discover.svg",
+        "selectedIconPath": "static/discover_fill.svg",
+        "text": "探索"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "static/my.svg",
+        "selectedIconPath": "static/my_fill.svg",
+        "text": "我的"
+      }
+    ]
+  },
+  "app-plus": {
+    "darkmode": true,
+    "themeLocation": "theme.json"
+  },
+  "h5": {
+    "darkmode": true,
+    "themeLocation": "theme.json"
+  }
+}
