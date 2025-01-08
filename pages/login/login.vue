@@ -93,7 +93,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import {
   refreshLogin,
   registerAnonimous,
@@ -162,6 +162,10 @@ const loginByAnonimous = () => {
     });
   });
 };
+
+onMounted(() => {
+  uni.switchTab({ url: "/pages/home/home" });
+});
 </script>
 
 <style lang="scss">

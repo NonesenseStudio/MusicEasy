@@ -43,10 +43,12 @@
     }
   ],
   "globalStyle": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarBackgroundColor": "@navBgColor",
+    "navigationBarTextStyle": "@navTxtStyle",
+    "backgroundColor": "@bgColor",
+    "backgroundTextStyle": "@bgTxtStyle",
+    "backgroundColorTop": "@bgColorTop",
+    "backgroundColorBottom": "@bgColorBottom"
   },
   "uniIdRouter": {
     "loginPage": "pages/login/login",
@@ -60,10 +62,10 @@
     }
   },
   "tabBar": {
-    "color": "#7A7E83",
-    "selectedColor": "#007AFF",
-    "borderStyle": "black",
-    "backgroundColor": "#F8F8F8",
+    "color": "@tabFontColor",
+    "selectedColor": "@tabSelectedColor",
+    "backgroundColor": "@tabBgColor",
+    "borderStyle": "@tabBorderStyle",
     "list": [
       {
         "pagePath": "pages/home/home",
@@ -84,18 +86,5 @@
         "text": "我的"
       }
     ]
-  },
-  "app-plus": {
-    "darkmode": true,
-    "themeLocation": "theme.json",
-    "softinputMode": "adjustResize",
-    "bounce": "none",
-    "softinput": {
-      "mode": "adjustPan"
-    }
-  },
-  "h5": {
-    "darkmode": true,
-    "themeLocation": "theme.json"
   }
 }

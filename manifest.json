@@ -10,6 +10,8 @@
     "usingComponents": true,
     "nvueStyleCompiler": "uni-app",
     "compilerVersion": 3,
+    "darkmode": true,
+    "themeLocation": "./theme.json",
     "splashscreen": {
       "alwaysShowBeforeRender": true,
       "waiting": true,
@@ -70,6 +72,8 @@
   },
   "vueVersion": "3",
   "h5": {
+    "darkmode": true,
+    "themeLocation": "./theme.json",
     "devServer": {
       "proxy": {
         "/api": {
