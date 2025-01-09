@@ -1,5 +1,5 @@
 <template>
-  $END$
+  <div>My</div>
 </template>
 
 <script setup lang="ts">
