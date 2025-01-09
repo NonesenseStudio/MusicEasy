@@ -8,26 +8,23 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+.DS_Store
 dist
 dist-ssr
-dist-electron
-release
+coverage
 *.local
-/unpackage/
-.project
-.DS_Store
+
+/cypress/videos/
+/cypress/screenshots/
 
 # Editor directories and files
-.vscode/.debug.env
+.vscode/*
+!.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-# lockfile
-package-lock.json
-pnpm-lock.yaml
-yarn.lock
+*.tsbuildinfo
