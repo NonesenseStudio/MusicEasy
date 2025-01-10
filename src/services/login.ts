@@ -23,8 +23,8 @@ export const refreshLogin = () => {
  * */
 type LoginByPhoneParams = {
   phone: string;
-  password: string;
-  captcha: string;
+  password: string | null;
+  captcha: string | null;
 };
 export const loginByPhone = (params: LoginByPhoneParams) => {
   return instance.post("/login/cellphone", params);
